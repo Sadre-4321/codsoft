@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Personal Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <script src="https://kit.fontawesome.com/6e1a881d2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header"> 
+       <nav>
+           <span class="logo" style="font-size:20px">Sadre Alam</span>
+           <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+           </ul>
+           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+       </nav>
+   </div>
+   <div class="container">
+       <div class="header-text">
+       <h1>Hi, I am <span>Sadre Alam</span> <br>From India</h1>
+       <p>I'm a Full Stack Developer. <br/>
+           My first exposure to professional life through internship has benefited me mostly in
+           strengthening my personal skills. I have developed a positive attitude and a strong
+           sense of responsibility being innovative , resourceful, open and responsive to change. It has
+           created in me an interest in lifelong learning.</p>
+           <div class="home-sci">
+               <a href="#"><i class='bx bxl-facebook'></i></a>
+               <a href="#"><i class='bx bxl-github'></i></a>
+               <a href="#"> <i class='bx bxl-twitter'></i></a>
+               <a href="#"> <i class='bx bxl-instagram'></i></a>
+               <a href="#"> <i class='bx bxl-linkedin'></i></a>
+           </div>
+   </div>
+   <div class="image-container">
+       <img src="AAkib.png.jpg" alt="">
+   </div>
+</div>
+
+<!-- About Section -->
+<div id="about">
+   <div class="container">
+       <div class="row">
+           <div class="about-col-1">
+               <img src="AAkib.png.jpg" alt="">
+           </div>
+           <div class="about-col-2">
+               <h1 class="sub-title">About Me</h1>
+              <p>
+               Hello! 👋 I'm [Sadre Alam], a Computer Science enthusiast currently pursuing my degree with a keen interest in web development, Java programming, and mastering data structures and algorithms.
+
+As a budding developer, I find immense joy in crafting dynamic and responsive web applications that not only look great but also deliver seamless user experiences. My journey into the world of web development ignited my passion for blending creativity with functionality, and I've been hooked ever since.
+
+In my Java endeavors, I thrive on the challenge of optimizing code efficiency and solving complex problems through the implementation of data structures and algorithms. From sorting algorithms to graph traversal techniques, I'm constantly exploring new ways to elevate my coding skills and tackle real-world challenges head-on.
+
+Moreover, my proficiency in SQL allows me to seamlessly integrate robust database solutions into my projects, ensuring efficient data management and retrieval.
+
+Outside of coding, I'm an avid learner who enjoys diving into the latest technologies and frameworks. Whether it's attending coding boot camps, participating in hackathons, or contributing to open-source projects, I'm always seeking opportunities to expand my knowledge and network with fellow tech enthusiasts.
+
+I believe in the power of technology to drive positive change and am passionate about leveraging my skills to create innovative solutions that make a difference in people's lives.
+
+Let's collaborate on exciting projects and push the boundaries of what's possible in the world of technology! Feel free to connect with me via [Your Contact Information or Social Media Handles].
+              </p>
+              <div class="tab-titles">
+               <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+               <p class="tab-links" onclick="openTab('experience')">Experience</p>
+               <p class="tab-links" onclick="openTab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+               <ul>
+                   <li><span>JAVA & Data Structure</span><br>Designing web interfaces</li>
+                   <li><span>Structured Query Language</span><br>Database management system</li>
+                   <li><span>Communication Skill Building</span><br>Presentation tasks</li>
+               </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+               <ul>
+                   <li><span>2023 - Current</span><br>A good web developer</li>
+                   <li><span>2022 - Current</span><br>A Java developer and data structure</li>
+                   <li><span>Communication Skill Building</span><br>Presentation tasks</li>
+               </ul>
+              </div>
+              <div class="tab-contents" id="education">
+               <ul>
+                   <li><span>2022 - 2026</span><br>Currently pursuing B.Tech</li>
+                   <li><span>2018 - 2020</span><br>Completed intermediate examination with 76% marks average</li>
+                   <li><span>2016 - 2017</span><br>Completed matriculation with 76% marks</li>
+               </ul>
+              </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+<!-- Services Section -->
+<div id="services">
+   <div class="container22">
+       <h1 class="sub-title">My Services</h1>
+       <div class="services-list">
+           <div>
+               <i class="fa-solid fa-code"></i>
+               <h2>Web Design</h2>
+               <p>
+                   Here we go for the complete roadmap the the guidance of web developing...
+               </p>
+               <a href="#">Learn More</a>
+           </div>
+           <div>
+               <i class="fa-brands fa-java"></i>
+               <h2>Java Development</h2>
+               <p>
+                   Here we go for the complete roadmap the the guidance of Java development and also data structures and algorithms...
+               </p>
+               <a href="#">Learn More</a>
+           </div>
+           <div>
+               <i class="fa-solid fa-database"></i>
+               <h2>SQL</h2>
+               <p>
+                   Here we go for the complete roadmap the the guidance of Structured Query Language...
+               </p>
+               <a href="#">Learn More</a>
+           </div>
+       </div>
+   </div>
+</div>
+
+<!-- Portfolio Section -->
+<div id="portfolio">
+       <h1 class="sub-title">My Work</h1>
+       <div class="work-list">
+           <div class="work">
+               <img src="personal port/work4.png" alt="">
+               <div class="layer">
+                   <h3>Social Media Website</h3>
+                   <p>
+                       This website connects you to talented people around the world.
+                       You can visit this website from Google.
+                   </p>
+                   <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="work">
+                    <img src="personal port/work 3.png" alt="">
+                    <div class="layer">
+                        <h3>Visit Font Awesome Website</h3>
+                        <p>
+                            This website connects you to talented people around the world.
+                            You can visit this website from Google.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="personal port/group.png" alt="">
+                    <div class="layer">
+                        <h3>To Search Something New Website</h3>
+                        <p>
+                            This website connects you to talented people around the world.
+                            You can visit this website from Google.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> akibk3833@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +91-7366056048</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="personal port/html.pdf" download class="btn btn2">Download HTML/CSS/JS File</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Created with &hearts; by Sadre Alam</p>
+        </div>
+    </div>
+    
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+    
+        function openTab(tabName) {
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active-link");
+            }
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+    
+    <script>
+        var sideMenu = document.getElementById("sidemenu");
+    
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+        function closeMenu() {
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxc23EA3H2fefJY6hynqOnUlWvhlFLtnDsdeZIdg49UjFY01Bbfmup-jVqvn7H9MSh6qg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    
+    </body>
+    </html>
