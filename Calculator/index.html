@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen-wrap">
+            <div class="screen-container">
+                <div class="history"></div>
+                <div class="screen"></div>
+            </div>
+        </div>
+        <div class="btn-wrap">
+            <button class="btn">C</button>
+            <button class="btn">DEL</button>
+            <button class="btn">%</button>
+            <button class="btn">/</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">*</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">-</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">+</button>
+            <button class="btn">.</button>
+            <button class="btn">0</button>
+            <button class="btn">=</button>
+        
+        </div>
+    </div>
+    <script>
+        const screen = document.querySelector('.screen');
+        const history = document.querySelector('.history');
+        const buttons = document.querySelectorAll('.btn');
+    
+        let currentNumber = '';
+        let previousNumber = '';
+        let operator = '';
+    
+        buttons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                const buttonText = e.target.innerText;
+    
+                if (buttonText === 'C') {
+                    currentNumber = '';
+                    previousNumber = '';
+                    operator = '';
+                    screen.textContent = '';
+                    history.textContent = '';
+                } else if (buttonText === 'DEL') {
+                    currentNumber = currentNumber.slice(0, -1);
+                    screen.textContent = currentNumber;
+                } else if (buttonText === '+' || buttonText === '-' || buttonText === '*' || buttonText === '/' || buttonText === '%') {
+                    if (currentNumber !== '') {
+                        previousNumber = parseFloat(currentNumber);
+                        operator = buttonText;
+                        currentNumber = '';
+                        history.textContent = `${previousNumber} ${operator}`;
+                    }
+                } else if (buttonText === '=') {
+                    currentNumber = parseFloat(currentNumber);
+                    let result;
+    
+                    switch (operator) {
+                        case '+':
+                            result = previousNumber + currentNumber;
+                            break;
+                        case '-':
+                            result = previousNumber - currentNumber;
+                            break;
+                        case '*':
+                            result = previousNumber * currentNumber;
+                            break;
+                        case '/':
+                            result = previousNumber / currentNumber;
+                            break;
+                        case '%':
+                            result = previousNumber % currentNumber;
+                            break;
+                    }
+    
+                    screen.textContent = result;
+                    history.textContent = `${previousNumber} ${operator} ${currentNumber} =`;
+                    previousNumber = result;
+                    currentNumber = '';
+                    operator = '';
+                } else {
+                    currentNumber += buttonText;
+                    screen.textContent = currentNumber;
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
